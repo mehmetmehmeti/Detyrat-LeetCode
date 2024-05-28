@@ -5,6 +5,7 @@
 #include <map> // for map
 #include <unordered_map> // for unordered_map
 #include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -683,7 +684,7 @@ int main() {
             cin >> s1;
             cout << "Enter second string: ";
             cin >> s2;
-            bool result = ht1.checkPermutation(s1, s2);
+            bool result = ht1.findPermutationDifference(s1, s2);
             cout << "Are the two strings permutations of each other? " << (result ? "Yes" : "No") << endl;
             break;
         }
